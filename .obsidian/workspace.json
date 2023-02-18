@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "686c739e8738d3a2",
+        "id": "e4f9b3cf44a4a048",
         "type": "tabs",
         "children": [
           {
-            "id": "334b597fc084dca1",
+            "id": "6ead41bd3bcc978c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "8a0a0e72dcf70d6b",
@@ -134,7 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 285.5
+    "width": 243.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,9 +147,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "334b597fc084dca1",
+  "active": "6ead41bd3bcc978c",
   "lastOpenFiles": [
     "grammar/Todo.md",
+    "Untitled.canvas",
+    "README.md",
     "groovy/Groovy_part_1.md"
   ]
 }
