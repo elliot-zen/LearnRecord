@@ -706,8 +706,33 @@ assert factorial == 1 * 1 * 2 * 3
 
 ###  3.Working with maps
 
-####  定义Map
+####  1. 定义Map
 
+1. 字面值定义map
+2. 定义空 map 
+3. 定义指定的 map 类型
+4. 当key为`String`类型时 `single or double quote`可以去掉；
+5. 当key为变量类型时，想使用变量的内容作为 key，将变量名置于圆括号内，表示强制`groovy`将此变量识别为变量值，而不是变量名；
+```groovy
+def myMap = [a: 1, b: 2, c: 3]
+assert myMap instanceof LinkedHashMap
+assert myMap.size() == 3
+assert myMap['a'] == 1
+
+def emptyMap = [:]
+assert emptyMap.size() == 0
+
+def explicitMap = new TreeMap()
+explicitMap.putAll(myMap)
+assert explicitMap['a'] == 1
+
+def composed = [x: 'y', *: myMap]
+assert composed == [x: 'y', a: 1, b: 2, c: 3]
+
+```
+
+
+#### 2. 使用 map 相关操作符 
 
 ###  4. Notes on Groovy collections 
 
